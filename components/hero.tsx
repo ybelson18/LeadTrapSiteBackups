@@ -8,7 +8,6 @@ import Image from "next/image";
 import { Container } from "./container";
 import { Heading } from "./heading";
 import { Subheading } from "./subheading";
-import { VideoModal } from "./video-modal";
 import Beam from "./beam";
 
 export const Hero = () => {
@@ -193,7 +192,7 @@ export const Card = ({
       <Beam showBeam className="-top-1 block" />
       <div className="absolute h-40 w-full bottom-0 md:-bottom-10 inset-x-0 scale-[1.2] z-20 pointer-events-none bg-charcoal [mask-image:linear-gradient(to_top,white_30%,transparent)]" />
       <div className="absolute inset-0 z-20  bg-transparent group-hover:bg-black/0 transition-all duration-200 flex items-center justify-center">
-        <VideoModal />
+        {/* Removed VideoModal */}
       </div>
       <div className=" h-full w-full  overflow-hidden rounded-2xl bg-transparent md:rounded-2xl md:p-4 ">
         {children}

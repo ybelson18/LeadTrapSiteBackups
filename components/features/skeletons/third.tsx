@@ -1,5 +1,5 @@
 "use client";
-import { motion, stagger, animate, useAnimate } from "framer-motion";
+import { motion, stagger, useAnimate } from "framer-motion";
 import React, { useEffect, useState, useMemo } from "react";
 import { IconContainer } from "../icon-container";
 import { cn } from "@/lib/utils";
@@ -64,16 +64,19 @@ export const SkeletonThree = () => {
     ];
   }, []);
 
+  const [scope, animate] = useAnimate();
+
   useEffect(() => {
-    // @ts-ignore
-    animate(sequence, {
-      repeat: Infinity,
-      repeatDelay: 1,
-    });
-    return () => {
-      // Use currentSequence in cleanup if needed
-    };
-  }, [sequence]);
+    if (sequence.length > 0) {
+      animate(scope.current, {
+        scale: [1, 1.2, 1],
+        transform: ["translateX(0px)", "translateX(10px)", "translateX(0px)"],
+        duration: 0.8,
+        repeat: Infinity,
+        repeatDelay: 1,
+      });
+    }
+  }, [sequence, animate, scope]);
   return (
     <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
       <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
