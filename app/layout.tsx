@@ -9,7 +9,7 @@ import { NavBar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "LeadTrap - Social Media Automation | Aceternity Templates",
+  title: "LeadTrap - AI That Sends You Premium Leads",
   description:
     "LeadTrap is an all in on marketing automation platform that handles emails, tasks tracking, social media management and everything in between.",
   openGraph: {
