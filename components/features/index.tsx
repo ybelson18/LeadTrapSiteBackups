@@ -1,28 +1,16 @@
 import React from "react";
 import { GradientContainer } from "../gradient-container";
 import { Container } from "../container";
-import { Subheading } from "../subheading";
-import { FeatureIconContainer } from "./feature-icon-container";
-import { FaBolt, FaChartLine } from "react-icons/fa";
-import {
-  Card,
-  CardDescription,
-  CardSkeletonContainer,
-  CardTitle,
-} from "./card";
-import { SkeletonOne } from "./skeletons/first";
-import { SkeletonTwo } from "./skeletons/second";
-import { SkeletonThree } from "./skeletons/third";
-import { SkeletonFour } from "./skeletons/fourth";
-import { SkeletonFive } from "./skeletons/fifth";
+import { FaBolt } from "react-icons/fa";
+import { LeadDataToggle } from "../lead-data-toggle";
 
 export const Features = () => {
   return (
     <GradientContainer className="md:my-20">
-      <Container className="py-20 max-w-5xl mx-auto  relative z-40">
-        <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
+      <Container className="py-20 max-w-5xl mx-auto relative z-40">
+        <div className="flex justify-center items-center overflow-hidden">
           <FaBolt className="h-6 w-6 text-cyan-500" />
-        </FeatureIconContainer>
+        </div>
         <h2 className="max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white pt-4 text-5xl md:text-6xl">
           <span
             data-br=":R577puja:"
@@ -74,8 +62,7 @@ export const Features = () => {
           </span>
         </h2>
 
-        {/* Grid section removed - ready for new content */}
-        
+        <LeadDataToggle />
       </Container>
     </GradientContainer>
   );
