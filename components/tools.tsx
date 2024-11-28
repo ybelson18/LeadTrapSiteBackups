@@ -11,6 +11,7 @@ import {
   IconTerminal,
   IconTool,
   IconQuestionMark,
+  IconClipboardText,
 } from "@tabler/icons-react";
 import { useScroll } from "framer-motion";
 import { BlurImage } from "./blur-image";
@@ -53,7 +54,7 @@ export const Tools = () => {
       ),
     },
     {
-      icon: <IconTerminal className="h-8 w-8 text-secondary" />,
+      icon: <IconClipboardText className="h-8 w-8 text-secondary" />,
       title: "Scoring Your Leads & Routing Them",
       description:
         "Every lead gets scored and routed instantly. High-value prospects hit your inbox, SMS and Slack. No leads wasted, everything tracked.",
