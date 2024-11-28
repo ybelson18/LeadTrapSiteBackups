@@ -136,7 +136,7 @@ export const Hero = () => {
                 fontFamily: 'var(--font-kalam), cursive',
                 WebkitFontSmoothing: 'antialiased',
                 color: 'rgb(0 0 0 / var(--tw-text-opacity))',
-                '--tw-text-opacity': '1',
+                ['--tw-text-opacity' as string]: '1',
                 top: '-12px'
               }}
             >
