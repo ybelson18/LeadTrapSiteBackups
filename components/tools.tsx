@@ -12,7 +12,7 @@ import {
   IconClipboardText,
   IconQuestionMark,
   IconMail,
-  IconSunglasses,
+  IconSunglassesFilled,
 } from "@tabler/icons-react";
 import { useScroll } from "framer-motion";
 import { BlurImage } from "./blur-image";
@@ -89,7 +89,7 @@ export const Tools = () => {
       ),
     },
     {
-      icon: <IconSunglasses className="h-8 w-8 text-secondary" />,
+      icon: <IconSunglassesFilled className="h-8 w-8 text-secondary" />,
       title: "You Get to Watch ",
       description:
         "Watch your leads turn into revenue in real-time. See exactly which prospects are worth pursuing and your expected payoff.",
