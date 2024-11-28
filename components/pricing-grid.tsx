@@ -122,7 +122,7 @@ export const PricingGrid = () => {
                     </p>
                   ) : (
                     <div className="text-xs text-transparent mt-1">
-                      Billed annually at ${tier.yearlyTotal.toLocaleString()}
+                      Billed annually at ${tier.yearlyTotal?.toLocaleString() ?? '0'}
                     </div>
                   )}
                 </div>
