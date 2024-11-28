@@ -2,52 +2,52 @@ import React from "react";
 import { Grid } from "./grid";
 
 export const FeaturesGrid = () => {
-  const grid = [
+  const features = [
     {
-      title: "HIPAA and SOC2 Compliant",
+      title: "Instant Lead Response",
       description:
-        "Our applications are HIPAA and SOC2 compliant, your data is safe with us, always.",
+        "Engage with website visitors the moment they arrive, turning casual browsers into qualified leads within seconds.",
     },
     {
-      title: "Automated Social Media Posting",
+      title: "Intelligent Lead Capture",
       description:
-        "Schedule and automate your social media posts across multiple platforms to save time and maintain a consistent online presence.",
+        "Automatically engage and qualify website visitors with AI-driven conversations that feel natural and personalized.",
     },
     {
-      title: "Advanced Analytics",
+      title: "Advanced Lead Analytics",
       description:
-        "Gain insights into your social media performance with detailed analytics and reporting tools to measure engagement and ROI.",
+        "Gain deep insights into your leads with detailed analytics, including firmographic data, engagement metrics, and conversion rates.",
     },
     {
-      title: "Content Calendar",
+      title: "Lead Management Dashboard",
       description:
-        "Plan and organize your social media content with an intuitive calendar view, ensuring you never miss a post.",
+        "Organize and track all your leads in one intuitive dashboard, ensuring no opportunity slips through the cracks.",
     },
     {
-      title: "Audience Targeting",
+      title: "Smart Lead Scoring",
       description:
-        "Reach the right audience with advanced targeting options, including demographics, interests, and behaviors.",
+        "Automatically score and prioritize leads based on behavior, engagement, and firmographic data to focus on the most promising opportunities.",
     },
     {
-      title: "Social Listening",
+      title: "Real-Time Notifications",
       description:
-        "Monitor social media conversations and trends to stay informed about what your audience is saying and respond in real-time.",
+        "Stay informed with instant alerts about new leads and engagement across multiple channels including email, SMS, and Slack.",
     },
     {
-      title: "Customizable Templates",
+      title: "Automated Follow-ups",
       description:
-        "Create stunning social media posts with our customizable templates, designed to fit your brand's unique style and voice.",
+        "Keep leads engaged with intelligent, automated follow-up sequences that maintain conversation momentum.",
     },
     {
-      title: "Collaboration Tools",
+      title: "Performance Reporting",
       description:
-        "Work seamlessly with your team using our collaboration tools, allowing you to assign tasks, share drafts, and provide feedback in real-time.",
+        "Track your ROI with comprehensive reports showing lead generation metrics, conversion rates, and agency attribution data.",
     },
   ];
   return (
     <div className="py-20 lg:py-40">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
-        {grid.map((feature, idx) => (
+        {features.map((feature, idx) => (
           <div
             key={feature.title}
             className="relative bg-gradient-to-b from-neutral-900 to-neutral-950 p-6 rounded-3xl overflow-hidden"
