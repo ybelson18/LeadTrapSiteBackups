@@ -74,59 +74,8 @@ export const Features = () => {
           </span>
         </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 py-10">
-          <Card className="lg:col-span-2">
-            <CardTitle>Post to multiple platforms at once</CardTitle>
-            <CardDescription>
-              With our AI-powered platform, you can post to multiple platforms
-              at once, saving you time and effort.
-            </CardDescription>
-            <CardSkeletonContainer>
-              <SkeletonOne />
-            </CardSkeletonContainer>
-          </Card>
-          <Card>
-            <CardSkeletonContainer className="max-w-[16rem] mx-auto">
-              <SkeletonTwo />
-            </CardSkeletonContainer>
-            <CardTitle>Analytics for everything</CardTitle>
-            <CardDescription>
-              Check analytics, track your posts, and get insights into your
-              audience.
-            </CardDescription>
-          </Card>
-          <Card>
-            <CardSkeletonContainer>
-              <SkeletonThree />
-            </CardSkeletonContainer>
-            <CardTitle>Integrated AI</CardTitle>
-            <CardDescription>
-              LeadTrap uses AI to help you create engaging content.
-            </CardDescription>
-          </Card>
-          <Card>
-            <CardSkeletonContainer
-              showGradient={false}
-              className="max-w-[16rem] mx-auto"
-            >
-              <SkeletonFour />
-            </CardSkeletonContainer>
-            <CardTitle>Easy Collaboration</CardTitle>
-            <CardDescription>
-              LeadTrap can integrate with Zapier, Slack and every other popular
-              integration tools.
-            </CardDescription>
-          </Card>
-          <Card>
-            <CardSkeletonContainer>
-              <SkeletonFive />
-            </CardSkeletonContainer>
-            <CardTitle>Know your audience</CardTitle>
-            <CardDescription>
-              Based on your audience, create funnels and drive more traffic.
-            </CardDescription>
-          </Card>
-        </div>
+        {/* Grid section removed - ready for new content */}
+        
       </Container>
     </GradientContainer>
   );
