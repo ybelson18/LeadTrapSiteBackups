@@ -1,6 +1,8 @@
 # LeadTrap Website
 
-A modern, dynamic website for LeadTrap, designed to showcase lead generation capabilities.
+Marketing website for LeadTrap - AI-powered lead generation and qualification.
+
+Last updated: <%= new Date().toISOString() %>
 
 ## Deployment
 

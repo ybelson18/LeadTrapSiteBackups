@@ -19,7 +19,7 @@ export const Tools = () => {
   const content = [
     {
       icon: <IconMailForward className="h-8 w-8 text-secondary" />,
-      title: "Lead Trap Activated",
+      title: "It&#39;s Trapping Your Leads",
       description:
         "The moment a potential buyer shows intent, our AI pounces. No more leads ghosting you.",
       content: (
@@ -36,9 +36,9 @@ export const Tools = () => {
     },
     {
       icon: <IconSocial className="h-8 w-8 text-secondary" />,
-      title: "Detective Mode",
+      title: "It&#39;s Doing Research",
       description:
-        "While engaging, it's digging deep into who your customer is, what they'll spend, and how ready they are to buy. Zero guesswork.",
+        "While engaging, it&#39;s digging deep into who your customer is, what they&#39;ll spend, and how ready they are to buy. With proprietary information on virtually every lead, there&#39;s zero guesswork.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -53,7 +53,7 @@ export const Tools = () => {
     },
     {
       icon: <IconTerminal className="h-8 w-8 text-secondary" />,
-      title: "Smart Scoring & Routing",
+      title: "It&#39;s Scoring Your Leads & Routing Them",
       description:
         "Every lead gets scored and routed instantly. High-value prospects hit your inbox, SMS and Slack. No leads wasted, everything tracked.",
       content: (
@@ -70,9 +70,9 @@ export const Tools = () => {
     },
     {
       icon: <IconTerminal className="h-8 w-8 text-secondary" />,
-      title: "Never Miss a Hot One",
+      title: "It&#39;s Managing Your Follow Ups",
       description:
-        "While your competition is sleeping, our automated follow-ups are closing. Email and SMS that hit hard and fast.",
+        "While your competition is sleeping, it&#39;s sending follow-ups that are closing. Email and SMS that hit hard and fast.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -87,7 +87,7 @@ export const Tools = () => {
     },
     {
       icon: <IconTerminal className="h-8 w-8 text-secondary" />,
-      title: "Feel Everything",
+      title: "You Get to Watch",
       description:
         "Watch your leads turn into revenue in real-time. See exactly which prospects are worth pursuing and your expected payoff.",
       content: (
@@ -153,7 +153,7 @@ export const Tools = () => {
             Nice website. Where are the leads?
           </Heading>
           <Subheading>
-            Stop paying for looks. Start paying for leads. We're all about filling up your pipeline with premium leads.
+            Stop paying for looks. Start paying for leads. We&#39;re all about filling up your pipeline with premium leads.
           </Subheading>
         </div>
 

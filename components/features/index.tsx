@@ -34,7 +34,7 @@ export const Features = () => {
               textWrap: 'balance'
             }}
           >
-            Get Your First Premium Lead in Under Five Minutes
+            Get Your First Premium Leads in Under Five Minutes
           </span>
         </h2>
         <h2 className="max-w-4xl my-4 mx-auto text-muted text-center font-normal text-xl md:text-2xl">
