@@ -17,16 +17,36 @@ const b2bData = [
   { category: "Needs", title: "Pain Points & Challenges" }
 ];
 
-const b2cData = [
-  { category: "Demographics", title: "Age, Income & Location" },
-  { category: "Behavior", title: "Purchase History & Patterns" },
-  { category: "Intent", title: "Current Shopping Interest" },
-  { category: "Digital", title: "Device & Browser Data" },
-  { category: "Engagement", title: "Website Activity Score" },
-  { category: "Preferences", title: "Product & Brand Affinity" },
-  { category: "Social", title: "Social Media Presence" },
-  { category: "Financial", title: "Credit Score Range" },
-  { category: "Lifestyle", title: "Interests & Activities" }
+const b2cEnrichments = [
+  "Geographic Location (IP-Based)",
+  "Area Income Level",
+  "Current Weather",
+  "Browsing Interests",
+  "Lead Score",
+  "Budget Prediction",
+  "Purchase Intent",
+  "Behavioral Patterns",
+  "Engagement History",
+  "Session Duration",
+  "Preferred Content Types",
+  "Frequently Viewed Pages",
+  "Search Keywords Used",
+  "Device Type",
+  "Time Spent on Website",
+  "Cart Abandonment",
+  "Content Engagement Rate",
+  "Feedback Sentiment",
+  "Proximity to Nearby Locations or Events",
+  "Budget",
+  "Timeline Preferences",
+  "Current Challenges",
+  "Lead Value",
+  "Intent Strength",
+  "Emotional Sentiment",
+  "Demographics",
+  "Family or Personal Context",
+  "Purchase History or Brand Loyalty",
+  "And more..."
 ];
 
 export const LeadDataToggle = () => {
@@ -62,7 +82,7 @@ export const LeadDataToggle = () => {
                 : 'text-neutral-400 hover:text-white'
             }`}
           >
-            B2C Data
+            B2C Insights
           </button>
         </div>
       </div>
@@ -76,29 +96,59 @@ export const LeadDataToggle = () => {
           transition={{ duration: 0.3 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
-            {isB2B ? "Premium B2B Lead Data" : "Premium B2C Insights"}
+            {isB2B ? "Premium B2B Lead Data" : "B2C Insights"}
           </h2>
           <p className="text-neutral-400 text-center text-xl mb-16">
-            {isB2B 
-              ? "Comprehensive data points for maximum conversion potential"
-              : "Real-time consumer behavior and intent data for higher conversion rates"
-            }
+            Real-time consumer behavior and intent data so you can close
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {(isB2B ? b2bData : b2cData).map((item, index) => (
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.05 }}
-                key={item.title}
-                className="bg-charcoal p-6 rounded-lg border border-neutral-800 hover:border-neutral-700 transition-all"
-              >
-                <p className="text-sm text-neutral-500 mb-2">{item.category}</p>
-                <p className="text-white text-lg">{item.title}</p>
-              </motion.div>
-            ))}
-          </div>
+          {isB2B ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {b2bData.map((item, index) => (
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.05 }}
+                  key={item.title}
+                  className="bg-charcoal p-6 rounded-lg border border-neutral-800 hover:border-neutral-700 transition-all"
+                >
+                  <p className="text-sm text-neutral-500 mb-2">{item.category}</p>
+                  <p className="text-white text-lg">{item.title}</p>
+                </motion.div>
+              ))}
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              {Array.from({ length: 3 }).map((_, colIndex) => (
+                <motion.div
+                  key={colIndex}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: colIndex * 0.1 }}
+                  className="space-y-4"
+                >
+                  {b2cEnrichments
+                    .slice(colIndex * 10, (colIndex + 1) * 10)
+                    .map((item, index) => (
+                      <motion.div
+                        key={item}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: (colIndex * 10 + index) * 0.02 }}
+                        className="flex items-start space-x-3 group"
+                      >
+                        <span className="text-neutral-500 group-hover:text-cyan-500 transition-colors">
+                          {colIndex * 10 + index + 1}.
+                        </span>
+                        <span className="text-neutral-300 group-hover:text-white transition-colors">
+                          {item}
+                        </span>
+                      </motion.div>
+                    ))}
+                </motion.div>
+              ))}
+            </div>
+          )}
         </motion.div>
       </div>
     </div>
