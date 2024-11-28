@@ -12,6 +12,7 @@ import {
   IconTool,
   IconQuestionMark,
   IconClipboardText,
+  IconMail,
 } from "@tabler/icons-react";
 import { useScroll } from "framer-motion";
 import { BlurImage } from "./blur-image";
@@ -71,7 +72,7 @@ export const Tools = () => {
       ),
     },
     {
-      icon: <IconTerminal className="h-8 w-8 text-secondary" />,
+      icon: <IconMail className="h-8 w-8 text-secondary" />,
       title: "Managing Your Follow Ups",
       description:
         "While your competition is sleeping, it&#39;s sending follow-ups that are closing. Email and SMS that hit hard and fast.",
