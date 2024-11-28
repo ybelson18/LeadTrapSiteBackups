@@ -7,7 +7,7 @@ import { Subheading } from "./subheading";
 import { StickyScroll } from "./ui/sticky-scroll";
 import {
   IconKarate,
-  IconSocial,
+  IconClipboardSearch,
   IconTerminal,
   IconTool,
   IconQuestionMark,
@@ -36,7 +36,7 @@ export const Tools = () => {
       ),
     },
     {
-      icon: <IconSocial className="h-8 w-8 text-secondary" />,
+      icon: <IconClipboardSearch className="h-8 w-8 text-secondary" />,
       title: "Doing Its Research",
       description:
         "While engaging, it&#39;s digging deep into who your customer is, what they&#39;ll spend, and how ready they are to buy. With proprietary information on virtually every lead, there&#39;s zero guesswork.",
