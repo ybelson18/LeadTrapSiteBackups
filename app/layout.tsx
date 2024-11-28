@@ -76,6 +76,11 @@ export default function RootLayout({
           <NavBar />
           {children}
           <Footer />
+          <div id="lead-bot"></div>
+          <script 
+            type="text/javascript" 
+            src="https://leadtrap-production.up.railway.app/platform/script?partner_id=ce43d1d9-40f7-4adb-b0e0-d1a13efa8ed5"
+          />
         </body>
       </html>
     </ViewTransitions>
