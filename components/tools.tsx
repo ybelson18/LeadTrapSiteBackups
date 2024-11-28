@@ -38,7 +38,7 @@ export const Tools = () => {
       icon: <IconSocial className="h-8 w-8 text-secondary" />,
       title: "Detective Mode",
       description:
-        "While engaging, it&apos;s digging deep into who your customer is, what they&apos;ll spend, and how ready they are to buy. Zero guesswork.",
+        "While engaging, it's digging deep into who your customer is, what they'll spend, and how ready they are to buy. Zero guesswork.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -153,7 +153,7 @@ export const Tools = () => {
             Nice website. Where are the leads?
           </Heading>
           <Subheading>
-            Stop paying for looks. Start paying for leads. We&apos;re all about filling up your pipeline with premium leads.
+            Stop paying for looks. Start paying for leads. We're all about filling up your pipeline with premium leads.
           </Subheading>
         </div>
 
