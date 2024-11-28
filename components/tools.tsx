@@ -6,7 +6,7 @@ import { Heading } from "./heading";
 import { Subheading } from "./subheading";
 import { StickyScroll } from "./ui/sticky-scroll";
 import {
-  IconFishHook,
+  IconKarate,
   IconSocial,
   IconTerminal,
   IconTool,
@@ -19,7 +19,7 @@ import { LeadCalculator } from "./lead-calculator"; // Import the LeadCalculator
 export const Tools = () => {
   const content = [
     {
-      icon: <IconFishHook className="h-8 w-8 text-secondary" />,
+      icon: <IconKarate className="h-8 w-8 text-secondary" />,
       title: "Trapping Your Leads",
       description:
         "The moment a potential buyer shows intent, our AI pounces. No more leads ghosting you.",
