@@ -36,16 +36,22 @@ export const GradientContainer = ({
     );
     setPercentage(newPercentage);
   });
+
+  const gradientStyle: CSSProperties = {
+    backgroundImage: `linear-gradient(
+      45deg, 
+      hsl(var(--primary)) 0%, 
+      hsl(var(--primary) / 0.8) 50%, 
+      hsl(var(--primary) / 0.6) 100%
+    )`,
+    WebkitBackgroundClip: 'text',
+    backgroundClip: 'text',
+    color: 'transparent',
+  };
+
   return (
     <div
       ref={ref}
-      style={
-        {
-          "--top": "rgba(97, 106, 115, .12)",
-          "--bottom": "transparent",
-          "--conic-size": "600px",
-        } as CSSProperties
-      }
       className={cn("relative z-20", className)}
     >
       <motion.div
@@ -60,9 +66,7 @@ export const GradientContainer = ({
         after:opacity-100
         `}
         style={{
-          background: `conic-gradient(from 90deg at ${
-            100 - percentage
-          }% 0%, var(--top), var(--bottom) 180deg) 0% 0% / 50% 100% no-repeat, conic-gradient(from 270deg at ${percentage}% 0%, var(--bottom) 180deg, var(--top)) 100% 0% / 50% 100% no-repeat`,
+          ...gradientStyle,
           opacity: 0.901567,
         }}
       />
