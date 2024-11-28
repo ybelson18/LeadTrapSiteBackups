@@ -6,10 +6,11 @@ import { Heading } from "./heading";
 import { Subheading } from "./subheading";
 import { StickyScroll } from "./ui/sticky-scroll";
 import {
-  IconMailForward,
+  IconFishHook,
   IconSocial,
   IconTerminal,
   IconTool,
+  IconQuestionMark,
 } from "@tabler/icons-react";
 import { useScroll } from "framer-motion";
 import { BlurImage } from "./blur-image";
@@ -18,7 +19,7 @@ import { LeadCalculator } from "./lead-calculator"; // Import the LeadCalculator
 export const Tools = () => {
   const content = [
     {
-      icon: <IconMailForward className="h-8 w-8 text-secondary" />,
+      icon: <IconFishHook className="h-8 w-8 text-secondary" />,
       title: "Trapping Your Leads",
       description:
         "The moment a potential buyer shows intent, our AI pounces. No more leads ghosting you.",
@@ -87,7 +88,7 @@ export const Tools = () => {
     },
     {
       icon: <IconTerminal className="h-8 w-8 text-secondary" />,
-      title: "You Get to Watch",
+      title: "You Get to Watch ",
       description:
         "Watch your leads turn into revenue in real-time. See exactly which prospects are worth pursuing and your expected payoff.",
       content: (
@@ -144,13 +145,13 @@ export const Tools = () => {
     >
       <div className="px-6">
         <FeatureIconContainer className="flex justify-center items-center overflow-hidden">
-          <IconTool className="h-6 w-6 text-cyan-500" />
+          <IconQuestionMark className="h-6 w-6 text-cyan-500" />
         </FeatureIconContainer>
       </div>
       <motion.div className="flex flex-col gap-16 md:gap-24">
         <div>
           <Heading>
-            Nice website. Where are the leads?
+            Nice website. Where are your leads?
           </Heading>
           <Subheading>
             Stop paying for looks. Start paying for leads. We&#39;re all about filling up your pipeline with premium leads.
