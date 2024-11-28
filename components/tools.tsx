@@ -53,7 +53,7 @@ export const Tools = () => {
       ),
     },
     {
-      icon: <IconClipboardText className="h-8 w-8 text-secondary" />,
+      icon: <IconTerminal className="h-8 w-8 text-secondary" />,
       title: "Scoring Your Leads & Routing Them",
       description:
         "Every lead gets scored and routed instantly. High-value prospects hit your inbox, SMS and Slack. No leads wasted, everything tracked.",
