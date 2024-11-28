@@ -7,6 +7,7 @@ import { ViewTransitions } from "next-view-transitions";
 import type { Viewport } from "next";
 import { NavBar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "LeadTrap - AI That Sends You Premium Leads",
@@ -77,7 +78,8 @@ export default function RootLayout({
           {children}
           <Footer />
           <div id="lead-bot"></div>
-          <script 
+          <Script 
+            strategy="afterInteractive"
             type="text/javascript" 
             src="https://leadtrap-production.up.railway.app/platform/script?partner_id=ce43d1d9-40f7-4adb-b0e0-d1a13efa8ed5"
           />
