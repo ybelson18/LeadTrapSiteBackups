@@ -61,7 +61,6 @@ const b2cEnrichments = [
   "Search Keywords Used",
   "Device Type",
   "Time Spent on Website",
-  "Cart Abandonment",
   "Content Engagement Rate",
   "Feedback Sentiment",
   "Proximity to Nearby Locations or Events",
