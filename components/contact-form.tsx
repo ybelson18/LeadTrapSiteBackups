@@ -24,16 +24,9 @@ export const ContactForm = () => {
 
         <div className="text-sm mt-10">
           <p className="text-sm text-neutral-200">Email</p>
-          <p className="text-sm text-neutral-400">contact@proactiv.ai</p>
+          <p className="text-sm text-neutral-400">contact@leadtrap.ai</p>
         </div>
-        <div className="text-sm mt-4">
-          <p className="text-sm text-neutral-200">Phone</p>
-          <p className="text-sm text-neutral-400">+1 (800) 123 XX21</p>
-        </div>
-        <div className="text-sm mt-4">
-          <p className="text-sm text-neutral-200">Support</p>
-          <p className="text-sm text-neutral-400">support@proactiv.ai</p>
-        </div>
+        {/* Removed Phone and Support sections */}
       </div>
       <div className="flex flex-col items-start gap-4 max-w-2xl w-full mx-auto bg-gradient-to-b from-neutral-900 to-neutral-950 p-10 rounded-3xl relative overflow-hidden">
         <Grid size={20} />

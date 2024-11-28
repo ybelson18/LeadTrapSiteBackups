@@ -41,8 +41,8 @@ export const GradientContainer = ({
     backgroundImage: `linear-gradient(
       45deg, 
       hsl(var(--primary)) 0%, 
-      hsl(var(--primary) / 0.8) 50%, 
-      hsl(var(--primary) / 0.6) 100%
+      hsl(var(--primary) / 0.9) 50%, 
+      hsl(var(--primary) / 0.8) 100%
     )`,
     WebkitBackgroundClip: 'text',
     backgroundClip: 'text',
