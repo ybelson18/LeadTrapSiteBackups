@@ -124,7 +124,7 @@ export const LeadDataToggle = () => {
           transition={{ duration: 0.3 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
-            {isB2B ? "Premium B2B Lead Data" : "Premium B2C Insights"}
+            {isB2B ? "Premium B2B Lead Data" : "Proprietary B2C Insights"}
           </h2>
           <p className="text-neutral-400 text-center text-xl mb-16">
             Real-time consumer behavior and intent data so you can close
