@@ -4,17 +4,45 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { IconBolt } from "@tabler/icons-react";
 
-// Define the data types
-const b2bData = [
-  { category: "Company", title: "Revenue & Growth Metrics" },
-  { category: "Technology", title: "Tech Stack & Tools Used" },
-  { category: "Decision Makers", title: "Key Contact Information" },
-  { category: "Intent", title: "Purchase Timeline & Budget" },
-  { category: "Market", title: "Industry & Company Size" },
-  { category: "Engagement", title: "Website Activity & Interest" },
-  { category: "History", title: "Past Purchases & Interactions" },
-  { category: "Competition", title: "Vendor Relationships" },
-  { category: "Needs", title: "Pain Points & Challenges" }
+const b2bEnrichments = [
+  "LinkedIn Profile URL",
+  "Company Name",
+  "Company Domain",
+  "Job Title",
+  "Department",
+  "Seniority Level",
+  "Company Industry",
+  "Company Size",
+  "Company Revenue",
+  "Company Headquarters Location",
+  "Role Type",
+  "Work Email Address",
+  "Phone Number Validation",
+  "Social Media Profiles",
+  "Work History",
+  "Education Background",
+  "Certifications",
+  "Company LinkedIn Profile",
+  "Company Growth Metrics",
+  "Technology Stack Used by the Company",
+  "Geolocation of Contact",
+  "Recent News About the Contact's Company",
+  "Company Founding Year",
+  "Competitors",
+  "Company Subsidiaries or Parent Organization",
+  "Lead Score",
+  "Budget",
+  "Timeline",
+  "Challenges or Pain Points",
+  "Desired Features/Services",
+  "Purchase Intent",
+  "Lead Value",
+  "Preferred Communication Channel",
+  "Decision-Making Process",
+  "Competitor Mentions",
+  "Growth or Expansion Plans",
+  "Emotional Sentiment",
+  "And more..."
 ];
 
 const b2cEnrichments = [
@@ -102,53 +130,36 @@ export const LeadDataToggle = () => {
             Real-time consumer behavior and intent data so you can close
           </p>
           
-          {isB2B ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {b2bData.map((item, index) => (
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.05 }}
-                  key={item.title}
-                  className="bg-charcoal p-6 rounded-lg border border-neutral-800 hover:border-neutral-700 transition-all"
-                >
-                  <p className="text-sm text-neutral-500 mb-2">{item.category}</p>
-                  <p className="text-white text-lg">{item.title}</p>
-                </motion.div>
-              ))}
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              {Array.from({ length: 3 }).map((_, colIndex) => (
-                <motion.div
-                  key={colIndex}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: colIndex * 0.1 }}
-                  className="space-y-4"
-                >
-                  {b2cEnrichments
-                    .slice(colIndex * 10, (colIndex + 1) * 10)
-                    .map((item, index) => (
-                      <motion.div
-                        key={item}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: (colIndex * 10 + index) * 0.02 }}
-                        className="flex items-start space-x-3 group"
-                      >
-                        <span className="text-neutral-500 group-hover:text-cyan-500 transition-colors">
-                          {colIndex * 10 + index + 1}.
-                        </span>
-                        <span className="text-neutral-300 group-hover:text-white transition-colors">
-                          {item}
-                        </span>
-                      </motion.div>
-                    ))}
-                </motion.div>
-              ))}
-            </div>
-          )}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {Array.from({ length: 3 }).map((_, colIndex) => (
+              <motion.div
+                key={colIndex}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: colIndex * 0.1 }}
+                className="space-y-4"
+              >
+                {(isB2B ? b2bEnrichments : b2cEnrichments)
+                  .slice(colIndex * 13, (colIndex + 1) * 13)
+                  .map((item, index) => (
+                    <motion.div
+                      key={item}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ delay: (colIndex * 13 + index) * 0.02 }}
+                      className="flex items-start space-x-3 group"
+                    >
+                      <span className="text-neutral-500 group-hover:text-cyan-500 transition-colors">
+                        {colIndex * 13 + index + 1}.
+                      </span>
+                      <span className="text-neutral-300 group-hover:text-white transition-colors">
+                        {item}
+                      </span>
+                    </motion.div>
+                  ))}
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </div>
