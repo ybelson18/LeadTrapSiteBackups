@@ -48,9 +48,9 @@ const questions = [
   },
   {
     id: 8,
-    title: "What happens if I run out of leads?",
+    title: "What happens if I outgrow my plan?",
     description:
-      "We understand that lead volume can be unpredictable. The first time you exceed your subscription limit, we'll allow you to go up to 80% over your plan's lead plan. If it happens again, we'll ask you to upgrade your plan to continue using LeadTrap, ensuring you have the right capacity for your growing business.",
+      "We love seeing our customers' businesses thrive! When you first outgrow your subscription, we'll automatically extend your capacity by up to 80% at no extra cost to keep your momentum going. If your success continues and you outgrow the plan again, we'll help you transition to a plan that matches your growing business, ensuring you can capture every valuable opportunity that comes your way.",
   },
   {
     id: 9,
