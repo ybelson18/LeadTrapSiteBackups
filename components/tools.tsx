@@ -8,15 +8,14 @@ import { StickyScroll } from "./ui/sticky-scroll";
 import {
   IconKarate,
   IconSearch,
-  IconTerminal,
-  IconClipboardText,
-  IconQuestionMark,
+  IconClipboardList,
   IconMail,
   IconSunglassesFilled,
+  IconQuestionMark,
 } from "@tabler/icons-react";
 import { useScroll } from "framer-motion";
 import { BlurImage } from "./blur-image";
-import { LeadCalculator } from "./lead-calculator"; // Import the LeadCalculator component
+import { LeadCalculator } from "./lead-calculator"; 
 
 export const Tools = () => {
   const content = [
@@ -55,7 +54,7 @@ export const Tools = () => {
       ),
     },
     {
-      icon: <IconClipboardText className="h-8 w-8 text-secondary" />,
+      icon: <IconClipboardList className="h-8 w-8 text-secondary" />,
       title: "Scores Your Leads & Routes Them",
       description:
         "Every lead gets scored and routed instantly. High-value prospects hit your inbox, SMS and Slack. No leads wasted, everything tracked.",
@@ -90,9 +89,9 @@ export const Tools = () => {
     },
     {
       icon: <IconSunglassesFilled className="h-8 w-8 text-secondary" />,
-      title: "You Get to Watch ",
+      title: "You Get to Watch",
       description:
-        "Watch your leads turn into revenue in real-time. See exactly which prospects are worth pursuing and your expected payoff.",
+        "Watch your leads turn into revenue in real-time. See exactly which prospects are worth pursuing and your expected pay off.",
       content: (
         <ImageContainer>
           <BlurImage
