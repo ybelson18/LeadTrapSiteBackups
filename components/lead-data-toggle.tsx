@@ -58,7 +58,6 @@ const b2cEnrichments = [
   "Session Duration",
   "Preferred Content Types",
   "Frequently Viewed Pages",
-  "Search Keywords Used",
   "Device Type",
   "Time Spent on Website",
   "Content Engagement Rate",
