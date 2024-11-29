@@ -135,7 +135,7 @@ export const LeadDataToggle = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: colIndex * 0.1 }}
-                className="space-y-4"
+                className="flex flex-col gap-4"
               >
                 {(isB2B ? b2bEnrichments : b2cEnrichments)
                   .slice(colIndex * 13, (colIndex + 1) * 13)
@@ -145,9 +145,9 @@ export const LeadDataToggle = () => {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ delay: (colIndex * 13 + index) * 0.02 }}
-                      className="flex items-start space-x-3 group"
+                      className="flex items-start gap-3 group"
                     >
-                      <span className="text-neutral-500 group-hover:text-cyan-500 transition-colors">
+                      <span className="text-neutral-500 group-hover:text-cyan-500 transition-colors min-w-[1.5rem]">
                         {colIndex * 13 + index + 1}.
                       </span>
                       <span className="text-neutral-300 group-hover:text-white transition-colors">
