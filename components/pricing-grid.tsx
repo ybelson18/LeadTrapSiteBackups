@@ -129,13 +129,14 @@ export const PricingGrid = () => {
                   <p className="text-lg text-neutral-400 font-medium">
                     ${checked ? tier.yearlyPrice : tier.monthlyPrice} / month
                   </p>
-                  {checked ? (
+                  {checked && tier.yearlyTotal && (
                     <p className="text-xs text-neutral-500 mt-1">
-                      Billed annually at ${tier.yearlyTotal?.toLocaleString()}
+                      Billed annually at ${tier.yearlyTotal.toLocaleString()}
                     </p>
-                  ) : (
+                  )}
+                  {!checked && tier.yearlyTotal && (
                     <div className="text-xs text-transparent mt-1">
-                      Billed annually at ${tier.yearlyTotal?.toLocaleString()}
+                      Billed annually at ${tier.yearlyTotal.toLocaleString()}
                     </div>
                   )}
                 </div>
