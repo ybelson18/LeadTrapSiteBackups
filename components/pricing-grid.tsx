@@ -76,6 +76,7 @@ export const PricingGrid = () => {
       description: "Unlimited leads MONTHLY",
       monthlyPrice: 0,
       yearlyPrice: 0,
+      yearlyTotal: 0,
       features: [
         "Everything in Mega, +",
         "Unlimited team members",
@@ -118,11 +119,11 @@ export const PricingGrid = () => {
                   </p>
                   {checked ? (
                     <p className="text-xs text-neutral-500 mt-1">
-                      {tier.yearlyTotal !== undefined ? `Billed annually at $${tier.yearlyTotal.toLocaleString()}` : ''}
+                      Billed annually at ${tier.yearlyTotal.toLocaleString()}
                     </p>
                   ) : (
                     <div className="text-xs text-transparent mt-1">
-                      {tier.yearlyTotal !== undefined ? `Billed annually at $${tier.yearlyTotal.toLocaleString()}` : ''}
+                      Billed annually at ${tier.yearlyTotal.toLocaleString()}
                     </div>
                   )}
                 </div>
