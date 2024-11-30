@@ -7,10 +7,9 @@ import { ViewTransitions } from "next-view-transitions";
 import type { Viewport } from "next";
 import { NavBar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import { LeadBot } from "@/components/lead-bot";
 
 export const metadata: Metadata = {
-  title: "LeadTrap - AI That Sends You Premium Leads",
+  title: "LeadTrap - Social Media Automation | Aceternity Templates",
   description:
     "LeadTrap is an all in on marketing automation platform that handles emails, tasks tracking, social media management and everything in between.",
   openGraph: {
@@ -77,7 +76,6 @@ export default function RootLayout({
           <NavBar />
           {children}
           <Footer />
-          <LeadBot />
         </body>
       </html>
     </ViewTransitions>

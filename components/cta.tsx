@@ -42,7 +42,7 @@ export const CTA = () => {
                 duration: 1.5,
                 repeat: Infinity,
                 repeatType: "loop",
-                repeatDelay: 2.5,
+                repeatDelay: 5,
                 ease: "easeInOut"
               }}
             >

@@ -9,20 +9,8 @@ import Balancer from "react-wrap-balancer";
 import Beam from "./beam";
 import { Switch } from "./switch";
 
-interface PricingTier {
-  title: string;
-  description: string;
-  monthlyPrice: number;
-  yearlyPrice: number;
-  yearlyTotal: number;
-  features: string[];
-  onClick: () => void;
-  ctaText: string;
-  featured?: boolean;
-}
-
 export const PricingGrid = () => {
-  const tiers: PricingTier[] = [
+  const tiers = [
     {
       title: "Pro",
       description: "100 leads MONTHLY",
@@ -88,7 +76,6 @@ export const PricingGrid = () => {
       description: "Unlimited leads MONTHLY",
       monthlyPrice: 0,
       yearlyPrice: 0,
-      yearlyTotal: 0,
       features: [
         "Everything in Mega, +",
         "Unlimited team members",

@@ -1,5 +1,5 @@
 "use client";
-import { motion, stagger, useAnimate } from "framer-motion";
+import { motion, stagger, animate, useAnimate, AnimationSequence } from "framer-motion";
 import React, { useEffect, useState, useMemo } from "react";
 import { IconContainer } from "../icon-container";
 import { cn } from "@/lib/utils";
@@ -16,67 +16,63 @@ import {
 export const SkeletonThree = () => {
   const [animating, setAnimating] = useState(false);
 
-  const sequence = useMemo(() => {
-    const scale = [1, 1.1, 1];
-    const transform = ["translateY(0px)", "translateY(-4px)", "translateY(0px)"];
-    
-    return [
-      [
-        ".circle-1",
-        {
-          scale,
-          transform,
-        },
-        { duration: 0.4 },
-      ],
-      [
-        ".circle-2",
-        {
-          scale,
-          transform,
-        },
-        { duration: 0.8 },
-      ],
-      [
-        ".circle-3",
-        {
-          scale,
-          transform,
-        },
-        { duration: 0.8 },
-      ],
-      [
-        ".circle-4",
-        {
-          scale,
-          transform,
-        },
-        { duration: 0.8 },
-      ],
-      [
-        ".circle-5",
-        {
-          scale,
-          transform,
-        },
-        { duration: 0.8 },
-      ],
-    ];
-  }, []);
+  const scale = useMemo(() => [1, 1.1, 1], []);
+  const transform = useMemo(() => ["translateY(0px)", "translateY(-4px)", "translateY(0px)"], []);
 
-  const [scope, animate] = useAnimate();
+  const sequence = useMemo(() => [
+    [
+      ".circle-1",
+      {
+        scale,
+        transform,
+      },
+      { duration: 0.4 },
+    ],
+    [
+      ".circle-2",
+      {
+        scale,
+        transform,
+      },
+      { duration: 0.8 },
+    ],
+    [
+      ".circle-3",
+      {
+        scale,
+        transform,
+      },
+      { duration: 0.8 },
+    ],
+    [
+      ".circle-4",
+      {
+        scale,
+        transform,
+      },
+      { duration: 0.8 },
+    ],
+    [
+      ".circle-5",
+      {
+        scale,
+        transform,
+      },
+      { duration: 0.8 },
+    ],
+  ] as AnimationSequence, [scale, transform]);
 
   useEffect(() => {
-    if (sequence.length > 0) {
-      animate(scope.current, {
-        scale: [1, 1.2, 1],
-        transform: ["translateX(0px)", "translateX(10px)", "translateX(0px)"],
-        duration: 0.8,
-        repeat: Infinity,
-        repeatDelay: 1,
-      });
-    }
-  }, [sequence, animate, scope]);
+    const controls = animate(sequence, {
+      repeat: Infinity,
+      repeatDelay: 1,
+    });
+
+    return () => {
+      controls.stop();
+    };
+  }, [sequence]);
+
   return (
     <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
       <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">

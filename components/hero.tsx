@@ -8,6 +8,7 @@ import Image from "next/image";
 import { Container } from "./container";
 import { Heading } from "./heading";
 import { Subheading } from "./subheading";
+import { VideoModal } from "./video-modal";
 import Beam from "./beam";
 
 export const Hero = () => {
@@ -89,7 +90,7 @@ export const Hero = () => {
             data-br=":R2l7puja:"
             data-brr="1"
           >
-            No More Shitty Leads
+            Stop Settling for Shit Leads
           </span>
         </Heading>
         <Subheading className="text-center mt-2 md:mt-6 max-w-3xl mx-auto relative z-10">
@@ -135,7 +136,7 @@ export const Hero = () => {
                 fontFamily: 'var(--font-kalam), cursive',
                 WebkitFontSmoothing: 'antialiased',
                 color: 'rgb(0 0 0 / var(--tw-text-opacity))',
-                ['--tw-text-opacity' as string]: '1',
+                '--tw-text-opacity': '1',
                 top: '-12px'
               }}
             >
@@ -192,7 +193,7 @@ export const Card = ({
       <Beam showBeam className="-top-1 block" />
       <div className="absolute h-40 w-full bottom-0 md:-bottom-10 inset-x-0 scale-[1.2] z-20 pointer-events-none bg-charcoal [mask-image:linear-gradient(to_top,white_30%,transparent)]" />
       <div className="absolute inset-0 z-20  bg-transparent group-hover:bg-black/0 transition-all duration-200 flex items-center justify-center">
-        {/* Removed VideoModal */}
+        <VideoModal />
       </div>
       <div className=" h-full w-full  overflow-hidden rounded-2xl bg-transparent md:rounded-2xl md:p-4 ">
         {children}

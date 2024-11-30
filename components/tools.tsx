@@ -6,22 +6,20 @@ import { Heading } from "./heading";
 import { Subheading } from "./subheading";
 import { StickyScroll } from "./ui/sticky-scroll";
 import {
-  IconKarate,
-  IconSearch,
-  IconClipboardList,
-  IconMail,
-  IconSunglassesFilled,
+  IconMailForward,
+  IconSocial,
+  IconTerminal,
   IconQuestionMark,
 } from "@tabler/icons-react";
 import { useScroll } from "framer-motion";
 import { BlurImage } from "./blur-image";
-import { LeadCalculator } from "./lead-calculator"; 
+import { LeadCalculator } from "./lead-calculator"; // Import the LeadCalculator component
 
 export const Tools = () => {
   const content = [
     {
-      icon: <IconKarate className="h-8 w-8 text-secondary" />,
-      title: "Traps Your Leads",
+      icon: <IconMailForward className="h-8 w-8 text-secondary" />,
+      title: "Lead Trap Activated",
       description:
         "The moment a potential buyer shows intent, our AI pounces. No more leads ghosting you.",
       content: (
@@ -37,10 +35,10 @@ export const Tools = () => {
       ),
     },
     {
-      icon: <IconSearch className="h-8 w-8 text-secondary" />,
-      title: "Does Its Research",
+      icon: <IconSocial className="h-8 w-8 text-secondary" />,
+      title: "Detective Mode",
       description:
-        "While engaging, it's digging deep into who your customer is, what they'll spend, and how ready they are to buy. With proprietary information on virtually every lead, there's zero guesswork.",
+        "While engaging, it&apos;s digging deep into who your customer is, what they&apos;ll spend, and how ready they are to buy. Zero guesswork.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -54,8 +52,8 @@ export const Tools = () => {
       ),
     },
     {
-      icon: <IconClipboardList className="h-8 w-8 text-secondary" />,
-      title: "Scores Your Leads & Routes Them",
+      icon: <IconTerminal className="h-8 w-8 text-secondary" />,
+      title: "Smart Scoring & Routing",
       description:
         "Every lead gets scored and routed instantly. High-value prospects hit your inbox, SMS and Slack. No leads wasted, everything tracked.",
       content: (
@@ -71,10 +69,10 @@ export const Tools = () => {
       ),
     },
     {
-      icon: <IconMail className="h-8 w-8 text-secondary" />,
-      title: "Manages Your Follow Ups",
+      icon: <IconTerminal className="h-8 w-8 text-secondary" />,
+      title: "Never Miss a Hot One",
       description:
-        "While your competition is sleeping, it's sending follow-ups that are closing. Email and SMS that hit hard and fast.",
+        "While your competition is sleeping, our automated follow-ups are closing. Email and SMS that hit hard and fast.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -88,10 +86,10 @@ export const Tools = () => {
       ),
     },
     {
-      icon: <IconSunglassesFilled className="h-8 w-8 text-secondary" />,
-      title: "You Get to Watch",
+      icon: <IconTerminal className="h-8 w-8 text-secondary" />,
+      title: "Feel Everything",
       description:
-        "Watch your leads turn into revenue in real-time. See exactly which prospects are worth pursuing and your expected pay off.",
+        "Watch your leads turn into revenue in real-time. See exactly which prospects are worth pursuing and your expected payoff.",
       content: (
         <ImageContainer>
           <BlurImage
@@ -155,7 +153,7 @@ export const Tools = () => {
             Nice website. Where are your leads?
           </Heading>
           <Subheading>
-            Stop paying for looks. Start paying for leads. We're all about filling up your pipeline with premium leads.
+            Stop paying for looks. Start paying for leads. We&apos;re all about filling up your pipeline with premium leads.
           </Subheading>
         </div>
 

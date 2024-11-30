@@ -5,6 +5,8 @@ import { Heading } from "@/components/heading";
 import { Hero } from "@/components/hero";
 import { PricingGrid } from "@/components/pricing-grid";
 import { Subheading } from "@/components/subheading";
+import { Testimonials } from "@/components/testimonials";
+import { TestimonialsMarquee } from "@/components/testimonials/marquee";
 import { IconReceiptFilled } from "@tabler/icons-react";
 import { Metadata } from "next";
 
@@ -33,6 +35,9 @@ export default function PricingPage() {
           and enterprises.
         </Subheading>
         <PricingGrid />
+      </div>
+      <div className="pb-40">
+        <TestimonialsMarquee />
       </div>
       <CTA />
     </div>
