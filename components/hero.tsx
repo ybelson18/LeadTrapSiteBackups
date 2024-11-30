@@ -135,8 +135,7 @@ export const Hero = () => {
                 transformOrigin: 'center center',
                 fontFamily: 'var(--font-kalam), cursive',
                 WebkitFontSmoothing: 'antialiased',
-                color: 'rgb(0 0 0 / var(--tw-text-opacity))',
-                '--tw-text-opacity': '1',
+                color: 'black',
                 top: '-12px'
               }}
             >
