@@ -9,8 +9,20 @@ import Balancer from "react-wrap-balancer";
 import Beam from "./beam";
 import { Switch } from "./switch";
 
+interface PricingTier {
+  title: string;
+  description: string;
+  monthlyPrice: number;
+  yearlyPrice: number;
+  yearlyTotal: number;
+  features: string[];
+  featured?: boolean;
+  onClick: () => void;
+  ctaText: string;
+}
+
 export const PricingGrid = () => {
-  const tiers = [
+  const tiers: PricingTier[] = [
     {
       title: "Pro",
       description: "100 leads MONTHLY",
@@ -119,11 +131,11 @@ export const PricingGrid = () => {
                   </p>
                   {checked ? (
                     <p className="text-xs text-neutral-500 mt-1">
-                      Billed annually at ${tier.yearlyTotal.toLocaleString()}
+                      Billed annually at ${tier.yearlyTotal?.toLocaleString()}
                     </p>
                   ) : (
                     <div className="text-xs text-transparent mt-1">
-                      Billed annually at ${tier.yearlyTotal.toLocaleString()}
+                      Billed annually at ${tier.yearlyTotal?.toLocaleString()}
                     </div>
                   )}
                 </div>
