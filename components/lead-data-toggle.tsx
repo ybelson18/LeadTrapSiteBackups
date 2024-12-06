@@ -14,11 +14,11 @@ const b2bEnrichments = [
   "Company Industry",
   "Company Size",
   "Company Revenue",
-  "Customers"
+  "Existing Customers",
   "Company Headquarters Location",
   "Role Type",
-  "Professional Bio"
-  "Person Skill Set"
+  "Professional Bio",
+  "Person Skill Set",
   "Work Email Address",
   "Phone Number Validation",
   "Social Media Profiles",
@@ -31,7 +31,7 @@ const b2bEnrichments = [
   "Geolocation of Contact",
   "Recent News About the Contact's Company",
   "Company Founding Year",
-  "Company Decision Makers"
+  "Company Decision Makers",
   "Competitors",
   "Company Subsidiaries or Parent Organization",
   "Lead Score",
@@ -45,23 +45,23 @@ const b2bEnrichments = [
   "Decision-Making Process",
   "Competitor Mentions",
   "Growth or Expansion Plans",
-  "Reviews"
+  "Reviews",
   "Emotional Sentiment",
   "And more...",
 ];
 
 const b2cEnrichments = [
-  "Mobile Phone Number"
-  "Instagram"
-  "Twitter (X)"
-  "LinkedIn Profile"
-  "Work Experience"
-  "Gender"
-  "Age Range"
+  "Mobile Phone Number",
+  "Instagram",
+  "Twitter (X)",
+  "LinkedIn Profile",
+  "Work Experience",
+  "Gender",
+  "Age Range",
   "Geographic Location",
-  "Neighborhood Information"
+  "Neighborhood Information",
   "Current Weather",
-  "Email Verification"
+  "Email Verification",
   "Browsing Interests",
   "Lead Score",
   "Lead Value",
